@@ -815,6 +815,13 @@ body.mobile-nav-active #mobile-nav-toggle {
   margin-bottom: 20px;
 }
 
+.imghai {
+  border:solid 0px;
+  box-shadow:-4px -5px 4px rgb(107, 103, 103);
+  border-radius: 20px;
+  margin: 10px 0 10px 0;
+}
+
 #team .member .pic {
   margin-bottom: 15px;
   overflow: hidden;
@@ -823,6 +830,16 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 #team .member .pic img {
   max-width: 100%;
+}
+
+.pic {
+  max-width: 100%;
+  margin-top: 0;
+}
+
+.social
+{
+
 }
 
 #team .member h4 {
