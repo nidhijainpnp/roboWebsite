@@ -715,7 +715,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 /* Portfolio Section
 --------------------------------*/
 #portfolio {
-  background: #f7f7f7;
+  background: #fff;
   padding: 80px 0;
 }
 
@@ -801,6 +801,37 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 #portfolio .portfolio-item:hover img {
   top: -30px;
+}
+
+/* Resources */
+#resources {
+  background: #f7f7f7;
+  padding: 80px 0;
+}
+
+#resources .osp{
+  text-align: center;
+}
+#resources .colum{
+  width: 50%;
+}
+#resources .osimg{
+  float: right;
+  height: 100%;
+  max-width: 80%;
+}
+#resources .osim{
+  float: left;
+  height: 100%;
+  max-width: 100%;
+}
+
+#resources .column{
+  width: 25%;
+}
+#resources .bookimg{
+  margin: auto;
+  height: 80%;
 }
 
 /* Team Section
