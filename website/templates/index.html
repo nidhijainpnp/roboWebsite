@@ -1,4 +1,5 @@
-<!DOCTYPE html>
+{% load static %}
+
 <html lang="en">
 
 <head>
@@ -18,19 +19,21 @@
     rel="stylesheet">
 
   <!-- Bootstrap CSS File -->
-  <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href={% static 'lib/bootstrap/css/bootstrap.min.css' %} rel="stylesheet">
 
   <!-- Libraries CSS Files -->
-  <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
-  <link href="lib/animate/animate.min.css" rel="stylesheet">
+  <link href={% static "lib/font-awesome/css/font-awesome.min.css" %} rel="stylesheet">
+  <link href={% static "lib/animate/animate.min.css" %}rel="stylesheet">
 
   <!-- Main Stylesheet File -->
-  <link href="css/style.css" rel="stylesheet">
+  <link href={% static "css/style.css" %} rel="stylesheet">
 
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
 
 </head>
 
@@ -85,7 +88,7 @@
     <div class="hero-container">
       <h1>Welcome to Robotronics-Club</h1>
       <h2>The bots are rising...</h2>
-      <img src="img/logo.png" alt="">
+      <img src={% static "img/logo.png"%} alt="">
       <a href="#about" class="btn-get-started">Get Started</a>
     </div>
   </section><!-- #hero -->
@@ -255,9 +258,9 @@
           <div class="row" id="portfolio-wrapper">
             <div class="col-lg-3 col-md-6 portfolio-item filter-app">
               <a href="https://www.robotics.org/blog">
-                <img src="img/rob4.png" alt="" style="width: 130%; height: 200px;">
+                <img src={% static "img/rob4.png"%} alt="" style="width: 130%; height: 200px;">
                 <div class="details">
-                  <h4>ROBOTIS ONLINE</h4>
+                  <h4>ROBOT IS ONLINE</h4>
                   <span></span>
                 </div>
               </a>
@@ -265,7 +268,7 @@
 
             <div class="col-lg-3 col-md-6 portfolio-item filter-web">
               <a href="https://robohub.org/">
-                <img src="img/rob.png" alt="" style="width: 120%; height: 200px;">
+                <img src={% static "img/rob.png"%} alt="" style="width: 120%; height: 200px;">
                 <div class="details">
                   <h4>ROBOHUB</h4>
                   <span></span>
@@ -275,7 +278,7 @@
 
             <div class="col-lg-3 col-md-6 portfolio-item filter-web">
               <a href="https://www.therobotreport.com/">
-                <img src="img/rob3.jpg" alt="" style="width: 100%; height: 200px;">
+                <img src={% static "img/rob3.jpg"%} alt="" style="width: 100%; height: 200px;">
                 <div class="details">
                   <h4>THE ROBOTIC REPORT</h4>
                   <span></span>
@@ -285,7 +288,7 @@
 
             <div class="col-lg-3 col-md-6 filter-app">
               <a href="" data-toggle="modal" data-target="#myModal">
-                <img src="img/add.png" alt="" style="width: 70%; height: 60%; padding-left: 20px; padding-top: 10px">
+                <img src={% static "img/add.png"%} alt="" style="width: 70%; height: 60%; padding-left: 20px; padding-top: 10px">
                 <h3 style="color: gray">Add your Blog</h3>
               </a>
             </div>
@@ -311,11 +314,11 @@
           <div class="row">
             <div class="colum">
                 <br><br>
-              <a href="https://github.com/jslee02/awesome-robotics-libraries" target="blank"><img class="osim" src="img/openrob.png" ></a>
+              <a href="https://github.com/jslee02/awesome-robotics-libraries" target="blank"><img src={% static "img/openrob.png"%}  class="osim"></a>
             </div>
             <div class="colum">
                 <br><br>
-              <a href="https://www.ros.org/" target="blank"><img class="osimg" src="img/ros.jpeg" ></a>
+              <a href="https://www.ros.org/" target="blank"><img class="osimg" src={% static "img/ros.jpeg"%} ></a>
             </div>
           </div>
           <p><br><br><br><strong>Recommended -</strong> V-Rep Pro as Simulator</p>
@@ -327,19 +330,19 @@
             <div class="row">
               <div class="column">
                 <br><br>
-                <img class="bookimg" src="img/rosbook.jpg" style="width:100%">
+                <img class="bookimg" src={% static "img/rosbook.jpg"%} style="width:100%">
               </div>
               <div class="column">
                 <br><br>
-                <img class="bookimg" src="img/rosbook2.jpg" style="width:100%">
+                <img class="bookimg" src={% static "img/rosbook2.jpg"%} style="width:100%">
               </div>
               <div class="column">
                   <br><br>
-                  <img class="bookimg" src="img/basrob.jpg" style="width:100%">
+                  <img class="bookimg" src={% static "img/basrob.jpg"%} style="width:100%">
                 </div>
                 <div class="column">
                     <br><br>
-                  <img class="bookimg" src="img/introb.jpg" style="width:100%">
+                  <img class="bookimg" src={% static "img/introb.jpg"%} style="width:100%">
                 </div>
             </div>
           </div>
@@ -359,7 +362,7 @@
         <div class="row">
           <div class="col-lg-3 col-md-6 imghai">
             <div class="member">
-              <div class="pic"><img src="img/piyush.jpg" alt=""></div>
+              <div class="pic"><img src={% static "img/piyush.jpg"%} alt=""></div>
               <h4>Piyush</h4>
               <span>Coordinator</span>
               <div class="social">
@@ -373,7 +376,7 @@
 
           <div class="col-lg-3 col-md-6 imghai">
             <div class="member">
-              <div class="pic"><img src="img/manpreet.jpg" alt=""></div>
+              <div class="pic"><img src={% static "img/manpreet.jpg"%} alt=""></div>
               <h4>Manpreet</h4>
               <span>Coordinator</span>
               <div class="social">
@@ -387,7 +390,7 @@
 
           <div class="col-lg-3 col-md-6 imghai">
             <div class="member">
-              <div class="pic"><img src="img/karan.jpg" alt=""></div>
+              <div class="pic"><img src={% static "img/karan.jpg"%} alt=""></div>
               <h4>Karan Ankit</h4>
               <span>Coordinator</span>
               <div class="social">
@@ -414,7 +417,7 @@
         <div class="row">
           <div class="col-lg-3 col-md-6 imghai">
             <div class="member">
-              <div class="pic"><img src="img/khyati.jpg" alt=""></div>
+              <div class="pic"><img src={% static "img/khyati.jpg"%} alt=""></div>
               <h4>khyati</h4>
               <span>Core team</span>
               <div class="social">
@@ -428,7 +431,7 @@
 
           <div class="col-lg-3 col-md-6 imghai">
             <div class="member">
-              <div class="pic"><img src="img/dipanshu.jpg" alt=""></div>
+              <div class="pic"><img src={% static "img/dipanshu.jpg"%} alt=""></div>
               <h4>Dipanshu Verma</h4>
               <span>Core team</span>
               <div class="social">
@@ -443,7 +446,7 @@
 
           <div class="col-lg-3 col-md-6 imghai">
             <div class="member">
-              <div class="pic"><img src="img/naman.jpg" alt=""></div>
+              <div class="pic"><img src={% static "img/naman.jpg"%} alt=""></div>
               <h4>Naman</h4>
               <span>Core team</span>
               <div class="social">
@@ -458,7 +461,7 @@
 
           <div class="col-lg-3 col-md-6 imghai">
             <div class="member">
-              <div class="pic"><img src="img/anjali.jpg" alt=""></div>
+              <div class="pic"><img src={% static "img/anjali.jpg"%} alt=""></div>
               <h4>Anjali</h4>
               <span>Core team</span>
               <div class="social">
@@ -472,7 +475,7 @@
 
           <div class="col-lg-3 col-md-6 imghai">
             <div class="member">
-              <div class="pic"><img src="img/aman.jpg" alt=""></div>
+              <div class="pic"><img src={% static "img/aman.jpg"%} alt=""></div>
               <h4>Aman Rathore</h4>
               <span>Core team</span>
               <div class="social">
@@ -486,7 +489,7 @@
 
           <div class="col-lg-3 col-md-6 imghai">
             <div class="member">
-              <div class="pic"><img src="img/chandan.jpg" alt=""></div>
+              <div class="pic"><img src={% static "img/chandan.jpg"%} alt=""></div>
               <h4>chandan</h4>
               <span>Core team</span>
               <div class="social">
@@ -500,7 +503,7 @@
 
           <div class="col-lg-3 col-md-6 imghai">
             <div class="member">
-              <div class="pic"><img src="img/garima.jpg" alt=""></div>
+              <div class="pic"><img src={% static "img/garima.jpg"%} alt=""></div>
               <h4>Garima</h4>
               <span>Core team</span>
               <div class="social">
@@ -514,7 +517,7 @@
 
           <div class="col-lg-3 col-md-6 imghai">
             <div class="member">
-              <div class="pic"><img src="img/hemraj.jpg" alt=""></div>
+              <div class="pic"><img src={% static "img/hemraj.jpg"%} alt=""></div>
               <h4>Hemraj</h4>
               <span>Core team</span>
               <div class="social">
@@ -528,7 +531,7 @@
 
           <div class="col-lg-3 col-md-6 imghai">
             <div class="member">
-              <div class="pic"><img src="img/nidhi.jpg" alt=""></div>
+              <div class="pic"><img src={% static "img/nidhi.jpg"%} alt=""></div>
               <h4>Nidhi</h4>
               <span>Core team</span>
               <div class="social">
@@ -542,7 +545,7 @@
 
           <div class="col-lg-3 col-md-6 imghai">
             <div class="member">
-              <div class="pic"><img src="img/vaishali.jpg" alt=""></div>
+              <div class="pic"><img src={% static "img/vaishali.jpg"%} alt=""></div>
               <h4>Vaishali</h4>
               <span>Core team</span>
               <div class="social">
@@ -556,7 +559,7 @@
 
           <div class="col-lg-3 col-md-6 imghai">
             <div class="member">
-              <div class="pic"><img src="img/dipesh.jpg" alt=""></div>
+              <div class="pic"><img src={% static "img/dipesh.jpg"%} alt=""></div>
               <h4>Dipesh</h4>
               <span>Core team</span>
               <div class="social">
@@ -570,7 +573,7 @@
 
           <div class="col-lg-3 col-md-6 imghai">
             <div class="member">
-              <div class="pic"><img src="img/akshay.jpg" alt=""></div>
+              <div class="pic"><img src={% static "img/akshay.jpg"%} alt=""></div>
               <h4>Akshay</h4>
               <span>Core team</span>
               <div class="social">
@@ -584,7 +587,7 @@
 
           <div class="col-lg-3 col-md-6 imghai">
             <div class="member">
-              <div class="pic"><img src="img/dhananjay.jpg" alt=""></div>
+              <div class="pic"><img src={% static "img/dhananjay.jpg"%} alt=""></div>
               <h4>dhananjay</h4>
               <span>Core team</span>
               <div class="social">
@@ -598,7 +601,7 @@
 
           <div class="col-lg-3 col-md-6 imghai">
             <div class="member">
-              <div class="pic"><img src="img/rohit.jpg" alt=""></div>
+              <div class="pic"><img src={% static "img/rohit.jpg"%} alt=""></div>
               <h4>Rohit</h4>
               <span>Core team</span>
               <div class="social">
@@ -612,7 +615,7 @@
 
           <div class="col-lg-3 col-md-6 imghai">
             <div class="member">
-              <div class="pic"><img src="img/raj.jpg" alt=""></div>
+              <div class="pic"><img src={% static "img/raj.jpg"%} alt=""></div>
               <h4>Raj Kumar</h4>
               <span>Core team</span>
               <div class="social">
@@ -626,7 +629,7 @@
 
           <div class="col-lg-3 col-md-6 imghai">
             <div class="member">
-              <div class="pic"><img src="img/hardik.jpg" alt=""></div>
+              <div class="pic"><img src={% static "img/hardik.jpg"%} alt=""></div>
               <h4>Hardik</h4>
               <span>Core team</span>
               <div class="social">
@@ -640,7 +643,7 @@
 
           <div class="col-lg-3 col-md-6 imghai">
             <div class="member">
-              <div class="pic"><img src="img/rakshit.jpg" alt=""></div>
+              <div class="pic"><img src={% static "img/rakshit.jpg"%} alt=""></div>
               <h4>Rakshit Raj</h4>
               <span>Core team</span>
               <div class="social">
@@ -654,7 +657,7 @@
 
           <div class="col-lg-3 col-md-6 imghai">
             <div class="member">
-              <div class="pic"><img src="img/manish.jpg" alt=""></div>
+              <div class="pic"><img src={% static "img/manish.jpg"%} alt=""></div>
               <h4>Manish</h4>
               <span>Core team</span>
               <div class="social">
@@ -668,7 +671,7 @@
 
           <div class="col-lg-3 col-md-6 imghai">
             <div class="member">
-              <div class="pic"><img src="img/komal.jpg" alt=""></div>
+              <div class="pic"><img src={% static "img/komal.jpg"%} alt=""></div>
               <h4>Komal</h4>
               <span>Core team</span>
               <div class="social">
@@ -798,21 +801,21 @@
   <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
 
   <!-- JavaScript Libraries -->
-  <script src="lib/jquery/jquery.min.js"></script>
-  <script src="lib/jquery/jquery-migrate.min.js"></script>
-  <script src="lib/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="lib/easing/easing.min.js"></script>
-  <script src="lib/wow/wow.min.js"></script>
-  <script src="lib/waypoints/waypoints.min.js"></script>
-  <script src="lib/counterup/counterup.min.js"></script>
-  <script src="lib/superfish/hoverIntent.js"></script>
-  <script src="lib/superfish/superfish.min.js"></script>
+  <script src={%static "lib/jquery/jquery.min.js"%}></script>
+  <script src={%static "lib/jquery/jquery-migrate.min.js"%}></script>
+  <script src={%static "lib/bootstrap/js/bootstrap.bundle.min.js"%}></script>
+  <script src={%static "lib/easing/easing.min.js"%}></script>
+  <script src={%static "lib/wow/wow.min.js"%}></script>
+  <script src={%static "lib/waypoints/waypoints.min.js"%}></script>
+  <script src={%static "lib/counterup/counterup.min.js"%}></script>
+  <script src={%static "lib/superfish/hoverIntent.js"}%></script>
+  <script src={%static "lib/superfish/superfish.min.js"%}></script>
 
   <!-- Contact Form JavaScript File -->
   <script src="contactform/contactform.js"></script>
 
   <!-- Template Main Javascript File -->
-  <script src="js/main.js"></script>
+  <script src={% static "js/main.js"%}></script>
 
   <!-- The Modal -->
   <div class="modal" id="myModal">
