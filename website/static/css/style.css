@@ -576,14 +576,19 @@ body.mobile-nav-active #mobile-nav-toggle {
 /* Facts Section
 --------------------------------*/
 #facts {
-  background: #f7f7f7;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/call-to-action-bg.jpg) fixed center center;
+  background-size: cover;
+  color: #2dc997;
   padding: 80px 0 60px 0;
+}
+
+#facts h3 {
+  color: #51d8ad;
 }
 
 #facts .counters span {
   font-size: 48px;
   display: block;
-  color: #2dc997;
 }
 
 #facts .counters p {
@@ -715,7 +720,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 /* Portfolio Section
 --------------------------------*/
 #portfolio {
-  background: #f7f7f7;
+  background: #fff;
   padding: 80px 0;
 }
 
@@ -803,10 +808,41 @@ body.mobile-nav-active #mobile-nav-toggle {
   top: -30px;
 }
 
+/* Resources */
+#resources {
+  background: #eff0ef;
+  padding: 80px 0;
+}
+
+#resources .osp{
+  text-align: center;
+}
+#resources .colum{
+  width: 50%;
+}
+#resources .osimg{
+  float: right;
+  height: 100%;
+  max-width: 80%;
+}
+#resources .osim{
+  float: left;
+  height: 100%;
+  max-width: 100%;
+}
+
+#resources .column{
+  width: 25%;
+}
+#resources .bookimg{
+  margin: auto;
+  height: 80%;
+}
+
 /* Team Section
 --------------------------------*/
 #team {
-  background: #fff;
+  background: rgb(235, 235, 235);
   padding: 80px 0 60px 0;
 }
 
