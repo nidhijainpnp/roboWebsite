@@ -855,7 +855,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   border:solid 0px;
   box-shadow:-4px -5px 4px rgb(107, 103, 103);
   border-radius: 20px;
-  margin: 10px 0 10px 0;
+  margin: 10px 0px 10px 0px;
 }
 
 #team .member .pic {
@@ -906,6 +906,48 @@ body.mobile-nav-active #mobile-nav-toggle {
   font-size: 18px;
   margin: 0 2px;
 }
+
+#team .member:hover{
+  transform: translateY(15px);
+}
+#team .member:hover:before{
+  opacity: 1;
+}
+#team .member:hover .team-text{
+  opacity: 1;
+  transform: translateY(0);
+}
+#team .member:before{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to top,#000000,transparent);
+  z-index: 2;
+  transition: 0.5s;
+  opacity: 0;
+}
+
+#team .member img{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+}
+#team .member .team-text{
+  position: relative;
+  z-index: 3;
+  color: #fff;
+  opacity: 0;
+  transform: translateY(60px);
+  transition: 0.5s;
+}
+
 
 /* Contact Section
 --------------------------------*/
